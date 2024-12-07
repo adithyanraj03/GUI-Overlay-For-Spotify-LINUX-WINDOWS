@@ -1,4 +1,7 @@
-PyQt5
-pynput
-spotipy
+gi
+dbus-python
+requests
+Pillow
+pycairo
+PyGObject
 Pyarmor
