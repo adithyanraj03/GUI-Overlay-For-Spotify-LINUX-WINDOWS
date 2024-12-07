@@ -2,7 +2,7 @@
 
 A customizable Spotify overlay for Linux and Windows that displays current track information and playback controls.
 
-![Spotify Gif](https://github.com/adithyanraj03/Spotify-Overlay--LINUX-WIN-/blob/main/2.gif)
+![Spotify Gif](https://github.com/adithyanraj03/GUI-Overlay-For-Spotify-LINUX-WINDOWS/blob/main/2.gif)
 
 ## ✨ Features
 
@@ -13,7 +13,7 @@ A customizable Spotify overlay for Linux and Windows that displays current track
 - 🖼️ Watermarked album art
   
   <br>
-![Spotify Overlay Screenshot](https://github.com/adithyanraj03/Spotify-Overlay--LINUX-WIN-/blob/main/1.png)
+![Spotify Overlay Screenshot](https://github.com/adithyanraj03/GUI-Overlay-For-Spotify-LINUX-WINDOWS/blob/main/1.png)
 
 ## 🛠️ Requirements
 
