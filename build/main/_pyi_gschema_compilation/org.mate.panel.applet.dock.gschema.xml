@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="appdock">
+   <schema id="org.mate.panel.applet.dock">
+     <key type="as" name="pinned-apps">
+      <default>[]</default>
+      <summary>the apps which have been pinned to the dock</summary>
+      <description>A string array containing the names of the apps which have been pinned to the dock.</description>
+    </key>
+    <key type="i" name="indicator-type">
+      <default>0</default>
+      <summary>The type of indicator (e.g light, dark or none)</summary>
+      <description>The type of indicator (e.g. light or dark, or no indicator) which is displayed next to running apps.</description>
+    </key>
+    <key type="b" name="multi-ind">
+       <default>false</default>
+       <summary>Whether to display an indicator for each open window</summary>
+       <description>Whether to display an indicator for each open window (maximum 4) that an application has.</description>
+    </key>
+    <key type="b" name="apps-from-all-workspaces">
+       <default>true</default>
+       <summary>Whether to show unpinned apps from all workspaces</summary>
+       <description>Whether to show running unpinned apps from all workspaces </description>
+    </key>
+    <key type="b" name="win-from-cur-workspace-only">
+        <default>false</default>
+        <summary>Whether to show indicators and window list items for the current workspace only</summary>
+        <description>Whether to show indicators and window list items only for apps which have windows open on the current workspace</description>
+    </key>
+    <key type="b" name="win-switch-unity-style">
+        <default>false</default>
+        <summary>Whether to focus the last active window of an app on first left click instead of showing a window list</summary>
+        <description>Whether to focus the last active window of an app on first left click. Otherwise a window list will be shown (default behaviour)</description>
+    </key>
+    <key type="b" name="use-win-list">
+        <default>true</default>
+        <summary>Whether or not to use the applet's window list, or Compiz thumbnail previews</summary>
+        <description>Sets whether or to switch between an app's open windows using either the applet's built in window list, of Compiz window previews</description>
+    </key>
+    <key type="b" name="panel-act-list">
+        <default>false</default>
+        <summary>Whether to show an app's action list on the panel right click menu.</summary>
+        <description>Whether to an apps action list on the panel right click menu. If set to false, the applet's built in action list popup will be used</description>
+    </key>
+    <key type="b" name="first-run">
+       <default>true</default>
+       <summary>Whether this is the first time the applet has been run</summary>
+       <description>Whether this is the first time this particular instance of the applet has been run</description>
+    </key>
+    <key type="b" name="click-restore-last-active">
+       <default>true</default>
+       <summary>Specifies what to do when a running app's dock icon is click</summary>
+       <description>If set to true, the app's last running window is made active again. If false all of the app's windows are restored/unminimizes and the last active window is made active again</description>
+    </key>
+    <key type="b" name="change-panel-color">
+       <default>false</default>
+       <summary>Specifies whether MATE panels are to change colour according to the desktop wallpaper</summary>
+       <description>If set to true, the colour of the MATE panel will change whenever the desktop wallpaper is changed, and will be set to the dominant colour of the wallpaper image</description>
+    </key>
+    <key type="b" name="change-panel-color-dock-only">
+       <default>false</default>
+       <summary>When changing MATE panel colours, specfies whether or not all panels are to changed</summary>
+       <description>If set to false, the colour of all MATE panels are changed. If set to true only the color of the panel containing the dock will be changed will be set to the dominant colour of the wallpaper image</description>
+    </key>
+       <key type="i" name="bg-type">
+      <default>0</default>
+      <summary>The type of active icon background (e.g gradient or solid fill)</summary>
+      <description>The type of icon background (e.g. gradient or solid fill) which is displayed under the active app.</description>
+    </key>
+    <key type="as" name="fallback-bar-col">
+      <default>["128","128","128"]</default>
+      <summary>The rgb elements of the fallback color of bar and other types of indicators</summary>
+      <description>A colour to be when drawing bar and other types of indicators and the highlight colour of the current theme cannot be determind. Mainly intended for use with Gtk2.</description>
+    </key>
+    <key type="i" name="app-spacing">
+      <default>0</default>
+      <summary>The amount of space between app icons in the dock</summary>
+      <description>The amount of space between app icons in the dock - valid values 0 - 8</description>
+    </key>
+    <key type="i" name="attention-type">
+      <default>0</default>
+      <summary>Defines how a dock icon reacts when an app requires attention</summary>
+      <description>Defines how a dock icon reacts when an app requires attention e.g. blink</description>
+    </key>
+    <key type="i" name="popup-delay">
+      <default>1000</default>
+      <summary>The delay before a popup window appears</summary>
+      <description>The delay (in milliseconds) before an action list or window list appears when the mouse hovers over a docked app</description>
+    </key>
+    <key type ="as" name="saved-configs">
+     <default>[]</default>
+     <summary>The pinned app configurations defined for each workspace</summary>
+     <description>Each item in the list is a csv string containing the config name, the name of the workspace that the config will automatically be selected for, followed by .desktop filenames representing the pinned apps</description>
+    </key>
+    <key type="b" name="pinned-apps-on-all-workspaces">
+     <default>true</default>
+     <summary>Whether pinned apps appear on all workspaces, or only on the workspace where they were pinned</summary>
+     <description>If true, pinned apps appear on all workspaces. If false, whenever a new workspace is made active the corresponding pinned app configuration will be loaded</description>
+    </key>
+    <key type = "i" name="dock-fixed-size">
+         <default>-1</default>
+         <summary>Indicates whether or not the dock should be a fixed size</summary>
+         <description>Speicifies the maximum number of app icons the can contain. If this is number is exceeded the dock not expand will instead allow the user to scroll app icons. A value of -1 indicates the dock is not a fixed size and will expand and contract and apps are open and closed</description>
+    </key>
+    <key type = "i" name="click-action">
+     <default>0</default>
+     <summary>Defines what to do when a running app's dock icon is clicked</summary>
+     <description>0 = display the app's window list, 1 = show compiz window spread, 2 = minimize/restore all app's windows. Note: the use-win-list key is now deprecated.</description>
+    </key>
+    <key type="i" name="theme">
+      <default>0</default>
+      <summary>Specifies the theme used by the dock (e.g. Unity, Subway, Default).</summary>
+      <description>Sets the indicator type and icon background used by the dock. If theme is set to 'Custom' these can be individually specified.</description>
+    </key>
+   </schema>
+</schemalist>
